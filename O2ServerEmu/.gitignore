@@ -1,0 +1,22 @@
+# O2Jam Server build artifacts
+*.o
+*.exe
+*.dll
+*.bak
+
+# Docker build context / deployed image artifacts
+dockerbuild/
+*.tar
+o2emu-rootfs/
+
+# Local test binaries (desktop-only, not for NAS)
+hello_static
+spin_static
+O2ServerEmu_static
+O2ServerEmu_dynamic
+O2ServerEmu_nassafe
+O2ServerEmu_nasdynamic
+
+# Misc
+*.log
+tmp/
