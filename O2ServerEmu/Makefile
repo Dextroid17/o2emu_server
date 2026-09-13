@@ -1,5 +1,5 @@
 CXX := g++
-CXXFLAGS := -lboost_system -lboost_thread -lpthread
+CXXFLAGS := -I/home/dextroid17/local/boost -lboost_system -lboost_thread -lpthread
 
 SRCS := $(wildcard *.cpp)
 OBJS := $(patsubst %.cpp,%.o,$(SRCS))
@@ -13,4 +13,4 @@ O2ServerEmu: $(OBJS)
 	$(CXX) $(CXXFLAGS) -c $<
 
 clean:
-	rm $(TARGET) *.o
+	rm -f $(TARGET) *.o
